@@ -39,5 +39,12 @@ public class TestPalindromIterativ {
 		boolean result = obj.istPalindrom("abbbas");
 		assertEquals(result, false);
 	}
+	@Test
+	void testEqualIgonereCase() {
+		Palindrom obj = new PalindromIterativ();
+		boolean result = obj.istPalindrom("abBA");
+		assertEquals(result, true);
+	}
+
 
 }

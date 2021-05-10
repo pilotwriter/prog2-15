@@ -1,11 +1,7 @@
 package testPalindrom;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
 import aufgabe15.Palindrom;
-import aufgabe15.PalindromRekursiv;
 import aufgabe15.PalindromRekursiv;
 
 public class TestPalindromRecursive {
@@ -38,5 +34,11 @@ public class TestPalindromRecursive {
 		Palindrom obj = new PalindromRekursiv();
 		boolean result = obj.istPalindrom("abbbas");
 		assertEquals(result, false);
+	}
+	@Test
+	void testEqualIgonereCase() {
+		Palindrom obj = new PalindromRekursiv();
+		boolean result = obj.istPalindrom("abBA");
+		assertEquals(result, true);
 	}
 }

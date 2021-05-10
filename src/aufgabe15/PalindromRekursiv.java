@@ -8,7 +8,7 @@ public class PalindromRekursiv implements Palindrom{
 			return true;
 		}
 		else {
-			if(wort.charAt(0) == wort.charAt(wort.length() -1)) {
+			if(Character.toLowerCase(wort.charAt(0)) == Character.toLowerCase(wort.charAt(wort.length() -1))) {
 				StringBuilder sb = new StringBuilder(wort);
 				sb.deleteCharAt(0);
 				sb.deleteCharAt(sb.length()-1);
